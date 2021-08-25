@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light rounded mt-2 mb-5" aria-label="Website navigation">
+    <div class="container-fluid">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <i class="bi bi-braces me-2" style="font-size: 2rem; color:coral;"></i>
+          <span class="fs-4">{{.Title}}</span>
+        </a>
+      <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbars" 
+          aria-controls="navbars" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbars">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
