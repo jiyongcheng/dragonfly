@@ -1,15 +1,13 @@
 {{ define "main" }}
 <div id="mainContent" class="row justify-content-center">
   <div class="col-12">
-    <div class="d-grid gap-5">      
       {{ range .Site.RegularPages }}
-      <article class="bg-light my-2">
+      <article class="bg-light my-5">
         <h1 class="text-center my-4"><a href="{{.Permalink}}" class="link-dark">{{ .Title}}</a></h1>
-        <div class="m-3">{{ .Content}}.</div>
+        <div class="m-3">{{ .Content}}</div>
         <p class="text-end me-5"><a href="#">read more</a></p>
       </article>
     {{ end }}
-    </div>
   </div>
 </div>
 <div id="pagination" class="row">
